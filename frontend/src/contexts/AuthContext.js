@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
             window.location.origin + "/silent-check-sso.html",
           pkceMethod: "S256",
         });
-        2;
+
         setAuthenticated(authenticated);
         setKeycloakInstance(keycloak);
 
