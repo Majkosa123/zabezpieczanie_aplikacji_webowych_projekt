@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../contexts/AuthContext";
 
 const HomePage = () => {
@@ -14,7 +15,7 @@ const HomePage = () => {
       ) : (
         <p>
           Jesteś zalogowany! Przejdź do{" "}
-          <a href="/dashboard">panelu użytkownika</a>.
+          <Link to="/dashboard">panelu użytkownika</Link>.
         </p>
       )}
     </div>

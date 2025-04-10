@@ -10,7 +10,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchAdminData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/admin", {
+        const response = await axios.get("http://localhost:5001/api/admin", {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },
